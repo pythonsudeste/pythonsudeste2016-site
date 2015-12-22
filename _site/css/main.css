@@ -207,7 +207,7 @@ a:hover {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(37, 140, 246, 0.75); }
+    background-color: rgba(85, 163, 244, 0.75); }
   .welcome .header {
     position: relative;
     display: table;
@@ -220,7 +220,7 @@ a:hover {
       .welcome .header .logo img, .welcome .header .logo span {
         vertical-align: middle; }
       .welcome .header .logo img {
-        width: 1.5em;
+        width: 9.5em;
         margin-right: .5em; }
       .welcome .header .logo span {
         font-size: .55em;
@@ -229,7 +229,8 @@ a:hover {
           font-family: "Panton Bold"; }
     .welcome .header .menu {
       float: left;
-      text-align: left; }
+      text-align: left;
+      margin-top: 0.5em; }
       .welcome .header .menu .list {
         display: inline-block;
         text-align: left;
@@ -245,6 +246,8 @@ a:hover {
             margin: 1em; }
             .welcome .header .menu .list .item .item-link:hover, .welcome .header .menu .list .item .item-link .active {
               color: #F0CB1F; }
+    .welcome .header .scroll {
+      display: none; }
     .welcome .header .menu-scroll {
       position: fixed;
       background-color: #1B77D8;
@@ -255,6 +258,10 @@ a:hover {
       padding: 5px 30px;
       display: table;
       top: -70px; }
+      .welcome .header .menu-scroll .top {
+        display: none; }
+      .welcome .header .menu-scroll .scroll {
+        display: inline; }
       .welcome .header .menu-scroll .center {
         max-width: 1200px;
         margin: auto;

@@ -9,7 +9,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(37, 140, 246, .75);
+    background-color: rgba(85, 163, 244, 0.75);
   }
 
   .header {
@@ -29,7 +29,7 @@
       }
 
       img {
-        width: 1.5em;
+        width: 9.5em;
         margin-right: .5em;
       }
 
@@ -46,6 +46,7 @@
     .menu {
       float: left;
       text-align: left;
+      margin-top: 0.5em;
 
       .list {
         display: inline-block;
@@ -70,7 +71,9 @@
         }
       }
     }
-
+    .scroll{
+        display:none;
+    }
     .menu-scroll {
       position: fixed;
       background-color: #1B77D8;
@@ -82,6 +85,12 @@
       display: table;
       top: -70px;
 
+      .top {
+          display: none;
+      }
+      .scroll {
+          display: inline;
+      }
       .center {
         max-width: 1200px;
         margin: auto;
