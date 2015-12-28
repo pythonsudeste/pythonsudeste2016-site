@@ -1,11 +1,11 @@
-Python Brazil [11]
+Python Sudeste 2016
 
 
 ### Set up & Install dependencies
 
 ```
-$ git clone git@github.com:designa/pythonbrasil11.git
-$ cd pythonbrasil11
+$ git clone git@github.com:pythonsudeste/pythonsudeste2016-site.git
+$ cd pythonsudeste2016-site
 $ gem install jekyll
 ```
 
@@ -32,4 +32,4 @@ http://localhost:4000
 ```
 
 ### Credits
-This project was created by [Designa](http://www.designa.com.br)
+This project was created by [Designa](http://www.designa.com.br) for Python Brazil [11]
