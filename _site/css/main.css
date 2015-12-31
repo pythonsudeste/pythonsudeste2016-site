@@ -194,6 +194,10 @@ a:hover {
       min-width: 0;
       width: 100%; } }
 
+.btn-center {
+  text-align: center;
+  margin: 1em; }
+
 .welcome {
   background-image: url("../images/bh-pampulha.jpg");
   background-size: cover;
