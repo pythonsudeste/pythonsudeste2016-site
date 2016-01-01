@@ -1,22 +1,11 @@
 .welcome {
-  @include background("../images/bh-pampulha.jpg", cover, center top);
   position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(85, 163, 244, 0.75);
-  }
 
   .header {
     position: relative;
     display: table;
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0;
     border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 
     .logo {
@@ -44,9 +33,9 @@
     }
 
     .menu {
-      float: left;
+      float: right;
       text-align: left;
-      margin-top: 0.5em;
+      margin-top: 1em;
 
       .list {
         display: inline-block;
@@ -60,7 +49,7 @@
           .item-link {
             display: inline-block;
             font-family: "Panton Bold";
-            color: #fff;
+            color: #356F9F;
             text-decoration: none;
             margin: 1em;
 
@@ -76,7 +65,7 @@
     }
     .menu-scroll {
       position: fixed;
-      background-color: #1B77D8;
+      background-color: rgba(27, 119, 218, 0.49);
       z-index: 999;
       top: 0;
       width: 100%;
@@ -84,6 +73,10 @@
       padding: 5px 30px;
       display: table;
       top: -70px;
+
+      .list .item .item-link {
+        color: #fff;
+      }
 
       .top {
           display: none;
@@ -104,7 +97,7 @@
               font-size: .55em;
           }
           img {
-              width: 35px;
+              width: 200px;
           }
       }
 
@@ -133,16 +126,29 @@
 
   .info {
     position: relative;
-    padding: 8em 0 4em 0;
+    padding: 5em 0 4em 0;
+    @include background("../images/bh-pampulha.jpg", cover, center top);
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(213, 236, 70, 0.71);
+    }
 
     h1 {
       font-size: 3.5em;
       font-family: "Panton Light";
+      font-weight: bold;
     }
 
     h2 {
       font-size: 2em;
       margin-top: 2em;
+      font-weight: bold;
     }
 
     h3 {
@@ -154,8 +160,14 @@
       margin: .5em 0 2em 0;
     }
 
+    .call_to_subscribe {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
     .register {
-      @extend .btn;
+      @extend .btn_call;
     }
   }
 }
