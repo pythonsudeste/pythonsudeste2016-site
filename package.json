@@ -1,26 +1,27 @@
 {
-  "name": "pythonbrasil11-site",
+  "name": "pythonsudeste2016-site-site",
   "version": "1.0.0",
-  "description": "Conferência Brasileira da Comunidade Python",
+  "description": "Conferência da região sudeste da Comunidade Python",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pythonbrasil/pythonbrasil11-site.git"
+    "url": "https://github.com/pythonsudeste/pythonsudeste2016-site.git"
   },
   "keywords": [
     "python",
     "conference",
-    "brasil"
+    "brasil",
+    "sudeste"
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pythonbrasil/pythonbrasil11-site/issues"
+    "url": "https://github.com/pythonsudeste/pythonsudeste2016-site/issues"
   },
-  "homepage": "https://github.com/pythonbrasil/pythonbrasil11-site",
+  "homepage": "https://github.com/pythonsudeste/pythonsudeste2016-site",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
