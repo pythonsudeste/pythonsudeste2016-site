@@ -141,7 +141,7 @@ a:hover {
     overflow: auto;
     width: 100%; } }
 .link {
-  color: #1D8BF6; }
+  color: #356F9F; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   html, body {
@@ -164,7 +164,42 @@ a:hover {
 @media (max-width: 319px) {
   html, body {
     font-size: 10px; } }
-.btn, .welcome .info .register {
+.btn_call, .welcome .info .register {
+  display: inline-block;
+  max-width: 100%;
+  height: 80px;
+  line-height: 79px;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-family: "Panton Bold";
+  font-size: 3em;
+  position: relative;
+  color: #fff;
+  background-color: #356F9F;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  padding: 0 1em; }
+  .btn_call:hover, .welcome .info .register:hover {
+    background-color: #2f628c;
+    text-decoration: none; }
+  .btn_call:active, .welcome .info .register:active {
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3); }
+  .btn_call:disabled, .welcome .info .register:disabled {
+    opacity: .5;
+    background-color: #356F9F; }
+  @media (max-width: 479px) {
+    .btn_call, .welcome .info .register {
+      min-width: 0;
+      width: 100%; } }
+
+.btn-center {
+  text-align: center;
+  margin: 1em; }
+
+.btn {
   display: inline-block;
   max-width: 100%;
   height: 40px;
@@ -179,44 +214,24 @@ a:hover {
   border: none;
   text-align: center;
   padding: 0 1em; }
-  .btn:hover, .welcome .info .register:hover {
+  .btn:hover {
     background-color: #e6c00f;
     text-decoration: none; }
-  .btn:active, .welcome .info .register:active {
+  .btn:active {
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3);
     -moz-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3);
     -webkit-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3); }
-  .btn:disabled, .welcome .info .register:disabled {
+  .btn:disabled {
     opacity: .5;
     background-color: #F0CB1F; }
-  @media (max-width: 479px) {
-    .btn, .welcome .info .register {
-      min-width: 0;
-      width: 100%; } }
-
-.btn-center {
-  text-align: center;
-  margin: 1em; }
 
 .welcome {
-  background-image: url("../images/bh-pampulha.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
   position: relative; }
-  .welcome:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(85, 163, 244, 0.75); }
   .welcome .header {
     position: relative;
     display: table;
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0;
     border-bottom: solid 1px rgba(255, 255, 255, 0.5); }
     .welcome .header .logo {
       width: 30%;
@@ -232,9 +247,9 @@ a:hover {
         .welcome .header .logo span strong {
           font-family: "Panton Bold"; }
     .welcome .header .menu {
-      float: left;
+      float: right;
       text-align: left;
-      margin-top: 0.5em; }
+      margin-top: 1em; }
       .welcome .header .menu .list {
         display: inline-block;
         text-align: left;
@@ -245,7 +260,7 @@ a:hover {
           .welcome .header .menu .list .item .item-link {
             display: inline-block;
             font-family: "Panton Bold";
-            color: #fff;
+            color: #356F9F;
             text-decoration: none;
             margin: 1em; }
             .welcome .header .menu .list .item .item-link:hover, .welcome .header .menu .list .item .item-link .active {
@@ -254,7 +269,7 @@ a:hover {
       display: none; }
     .welcome .header .menu-scroll {
       position: fixed;
-      background-color: #1B77D8;
+      background-color: rgba(27, 119, 218, 0.9);
       z-index: 999;
       top: 0;
       width: 100%;
@@ -262,6 +277,8 @@ a:hover {
       padding: 5px 30px;
       display: table;
       top: -70px; }
+      .welcome .header .menu-scroll .list .item .item-link {
+        color: #fff; }
       .welcome .header .menu-scroll .top {
         display: none; }
       .welcome .header .menu-scroll .scroll {
@@ -276,7 +293,7 @@ a:hover {
         .welcome .header .menu-scroll .logo span {
           font-size: .55em; }
         .welcome .header .menu-scroll .logo img {
-          width: 35px; }
+          width: 200px; }
       .welcome .header .menu-scroll .menu {
         float: right; }
     @media (max-width: 905px) {
@@ -290,18 +307,36 @@ a:hover {
         display: none; } }
   .welcome .info {
     position: relative;
-    padding: 8em 0 4em 0; }
+    padding: 5em 0 4em 0;
+    background-image: url("../images/bh-pampulha.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; }
+    .welcome .info:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(213, 236, 70, 0.71); }
     .welcome .info h1 {
       font-size: 3.5em;
-      font-family: "Panton Light"; }
+      font-family: "Panton Light";
+      font-weight: bold; }
     .welcome .info h2 {
       font-size: 2em;
-      margin-top: 2em; }
+      margin-top: 2em;
+      font-weight: bold; }
     .welcome .info h3 {
       font-size: 1em; }
     .welcome .info p {
       font-family: "Panton Light";
       margin: .5em 0 2em 0; }
+    .welcome .info .call_to_subscribe {
+      width: 100%;
+      display: inline-block;
+      text-align: center; }
 
 .about {
   padding: 4em 0; }
@@ -325,7 +360,7 @@ a:hover {
     color: #333;
     margin-bottom: .5em; }
   .about a {
-    color: #1D8BF6; }
+    color: #356F9F; }
   @media (max-width: 479px) {
     .about .column {
       width: 100%; }
@@ -451,7 +486,7 @@ a:hover {
         color: #333; }
         .schedule .days .list .item .item-link:hover, .schedule .days .list .item .item-link.active {
           color: #fff;
-          background-color: #1D8BF6; }
+          background-color: #356F9F; }
   .schedule .room {
     position: relative;
     margin-top: 50px;
@@ -522,7 +557,7 @@ a:hover {
       .schedule .room .lecture .track-tutorials {
         background-color: #f1c40f; }
       .schedule .room .lecture .talk {
-        color: #1D8BF6;
+        color: #356F9F;
         font-family: "Panton Light";
         padding-bottom: 0px; }
       .schedule .room .lecture .speaker {
